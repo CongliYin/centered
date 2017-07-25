@@ -1,0 +1,43 @@
+<!--上下左右居中-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DIV上下左右居中</title>
+	<style type="text/css">
+			*{/*实现div的上下左右居中*/
+				margin: 0;
+				padding: 0;
+			}/*清除格式*/
+			.div0{
+				height: 500px;
+				width: 500px;
+				position: relative;/*父元素相对定位*/
+				background: #678680;
+			}
+			.div1{
+				position: absolute;/*子元素绝对定位*/
+				height: 240px;
+				width: 300px;
+				/*overflow: hidden;*//*可使得多出块元素的文本隐藏*/
+				top: 50%;
+				left: 50%;
+				margin-top: -120px;/*高的一半*/
+				margin-left: -150px;/*宽的一半*/
+				border: 5px solid #E58B8B;
+				text-align: center;
+			}
+			.div1 p{
+				font-size: 36px;
+			}
+	</style>
+</head>
+<body>
+	<div class="div0">
+		<div class="div1">
+			<p>hello world!</p>
+			<p>hello world!</p>
+		</div>
+	</div>
+</body>
+</html>
